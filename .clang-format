@@ -1,0 +1,56 @@
+BasedOnStyle: LLVM
+MaxEmptyLinesToKeep: 2
+ColumnLimit: 120
+ExperimentalAutoDetectBinPacking: true
+
+# Pack
+PackConstructorInitializers: Never
+BinPackParameters: false
+BinPackArguments: false
+
+# Indentation
+IndentWidth: 4
+ContinuationIndentWidth: 4
+TabWidth: 4
+AccessModifierOffset: -4
+IndentCaseBlocks: false
+IndentCaseLabels: false
+
+# Namespace
+CompactNamespaces: true
+NamespaceIndentation: None
+FixNamespaceComments: true
+
+# Allow Short Lines
+AllowShortLambdasOnASingleLine: true
+AllowShortEnumsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: InlineOnly
+AllowShortIfStatementsOnASingleLine: true
+AllowShortLoopsOnASingleLine: false
+
+# Align
+AlignConsecutiveShortCaseStatements:
+    Enabled: true
+    AcrossEmptyLines: true
+    AcrossComments: true
+    AlignCaseColons: false
+AlignAfterOpenBracket: AlwaysBreak
+AlignEscapedNewlines: Left
+AlignConsecutiveAssignments: Consecutive
+
+# Break
+BreakBeforeBraces: Attach
+BreakBeforeTernaryOperators: true
+AlwaysBreakBeforeMultilineStrings: true
+AlwaysBreakTemplateDeclarations: true
+
+# Insert
+InsertBraces: true
+InsertNewlineAtEOF: true
+
+# Remove
+RemoveBracesLLVM: true
+KeepEmptyLines:
+    AtStartOfFile: false
+    AtStartOfBlock: false
+    AtEndOfFile: true
