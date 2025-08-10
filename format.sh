@@ -4,7 +4,7 @@ set -e
 required_version=19
 current_version=$(clang-format --version | grep -o '[0-9]\+' | head -1)
 
-if [ "${current_version}" -lt "{required_version}" ]; then
+if [ "${current_version}" -lt "${required_version}" ]; then
 	echo "[error] clang-format version $required_version+ is required. Your current version is ${current_version}."
 	exit 1
 fi
