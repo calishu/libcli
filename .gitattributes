@@ -1,0 +1,2 @@
+*.h linguist-languagC
+*.hpp linguist-language=C++
