@@ -38,6 +38,19 @@ public:
         if (callback) callback();
         return object;
     }
+
+    auto create_option(std::string_view name, std::string_view description, std::string *value, void (*callback)())
+        -> LibCLI::OptionObject {
+        const auto object = LibCLI::OptionObject{name, description, value, callback};
+
+        if (!has_unique_name(name, options))
+            throw std::runtime_error{std::format("The option `{}` already exists.", name)};
+
+        options.emplace_back(object);
+
+        if (callback) callback();
+        return object;
+    }
 };
 
 }; // namespace LibCLI
