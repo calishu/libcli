@@ -10,7 +10,6 @@
 namespace LibCLI {
 
 class App {
-public:
     std::string_view app_desc;
 
     std::vector<LibCLI::FlagObject> flags;
