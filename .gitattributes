@@ -1,2 +1,24 @@
+# --- linguist
+# - headers
 *.h linguist-language=C
+*.hh linguist-language=C++
 *.hpp linguist-language=C++
+*.inl linguist-language=C++
+
+# - impl files
+*.c linguist-language=C
+*.cpp linguist-language=C++
+*.cc linguist-language=C++
+
+# --- LF Line ending
+*.md text eol=lf
+
+# - scripts
+*.sh text eol=lf
+*.py text eol=lf
+
+# - configs
+*.yml text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf
+*.json text eol=lf
