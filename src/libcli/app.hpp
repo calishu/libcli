@@ -34,6 +34,8 @@ public:
         if (!has_unique_name(name, flags)) throw std::runtime_error{std::format("The flag `{}` already exists.", name)};
 
         flags.emplace_back(object);
+
+        if (callback) callback();
         return object;
     }
 };
