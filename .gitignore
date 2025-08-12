@@ -1,5 +1,32 @@
-*.log
-build/
+# --- IDE Meta Data
 .idea/
 .vscode/
+
+# --- Disposable files/directories
+*.log
 .cache/
+callgrind.*
+
+# --- Build related files/directories
+build/
+
+# - executables
+*.out
+*.exe
+*.elf
+*.bin
+
+# - libraries
+*.dll
+*.so
+*.dylib
+*.lib
+*.a
+
+# - package formats
+*.deb
+*.rpm
+*.pkg
+*.app
+*.snap
+*.flatpak
